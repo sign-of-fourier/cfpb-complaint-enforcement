@@ -4,7 +4,7 @@ An AI agent (Perplexity) autonomously built a Bayesian Optimization pipeline tha
 
 **The agent was told nothing about BoTorch.** It independently chose the library, selected MixedSingleTaskGP as the surrogate model, and used LogExpectedImprovement as the acquisition function.
 
-Total cost: $200 Perplexity Pro subscription. No cloud compute, no GPU cluster, no research team.
+Total cost: $200/month Perplexity Max subscription. No cloud compute, no GPU cluster, no research team.
 
 ## Results
 
