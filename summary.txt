@@ -1,0 +1,22 @@
+CFPB ENFORCEMENT ACTION PREDICTOR — BACKTEST RESULTS
+
+HEADLINE:
+BO found a pipeline config that predicts CFPB enforcement actions with F1=1.0000 
+(precision=1.0000, recall=1.0000) using complaint 
+data available 5 months before the public announcement, in 48 evaluations. 
+Random search scored F1=0.8182 in the same budget.
+
+BEST CONFIG:
+- Lookback: 156 days (~5 months)
+- Min complaints: 70
+- Features: all
+- Model: logistic_regression
+- Class weight ratio: 18.5
+- Threshold: 0.62
+- Text features: excluded
+- Control ratio: 1:1
+
+DATASET: 213 enforcement actions (2017-2024), 26 matched to 
+complaint data, 25 control cases. 
+
+BO: 8 Sobol + 40 BO = 48 evals. Random: 48 evals. BoTorch MixedSingleTaskGP + LogEI.
